@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian King</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="header ">
+        <div class="header__wrapper header_fixed">
+            <a href="#" class="header__logo">
+                <img src="./img/Logo.svg" alt="Logo">
+            </a>
+            <div class="header__burger">
+                <span id="icon-menu" onclick="navToggle()" class="material-icons">
+                    menu
+                </span>
+    
+            </div>
+            <nav id="nav" class="header__nav">
+                <ul class="header__nav__ul">
+                    <div class="header__nav__sect">
+                        <li class="header__nav__li"><a href="#" class="header__nav__a">Course topics</a></li>
+                        <li class="header__nav__li"><a href="#" class="header__nav__a">What students say</a></li>
+                    </div>
+                    <div class="header__nav__sect">
+                        <li class="header__nav__li"><a href="#" class="header__nav__a">Sign in</a></li>
+                        <li class="header__nav__li"><a href="#" class="header__nav__a btn header__nav__btn"
+                                id="nav__btn">Get started</a></li>
+                    </div>
+                </ul>
+                <span id="icon-close" onclick="navToggle()" class="material-icons">
+                    close
+                </span>
+            </nav>
+        </div>
+    </header>
+    <section class="main-screen">
+        <div class="container main-screen__container">
+            <div class="main-screen__info">
+                <h1 class="main-screen__title">Learn no-code tools today.</h1>
+                <p class="main-screen__desc">Create beautiful webflow sites with flowbase. Clone for
+                    free and get started building a site today.</p>
+                <a href="#" class="main-screen__btn btn">Get started</a>
+                <div class="main-screen__students">
+                    <div class="main-screen__students__list">
+                        <div class="main-screen__students__img">
+                            <img src="./img/team1.png" alt="Student1">
+                        </div>
+                        <div class="main-screen__students__img">
+                            <img src="./img/team2.png" alt="Student2">
+                        </div>
+                        <div class="main-screen__students__img">
+                            <img src="./img/team3.png" alt="Student3">
+                        </div>
+                    </div>
+                    <div class="main-screen__students__desc">Join over <span>4,000+</span> students</div>
+                </div>
+            </div>
+            
+        </div>
+      <div class="main-screen__video">
+        <img src="./img/video.png" alt="video">
+      </div>      
+            
+    </section>
+    <section class="counter container">
+        <div class="counter__wrapper">
+            <div class="counter__item">
+                <div class="counter__amount">12,201</div>
+                <div class="counter__title">happy students</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__amount">3,291</div>
+                <div class="counter__title">lectures</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__amount">1,291</div>
+                <div class="counter__title">5 star reviews</div>
+            </div>
+        </div>
+        
+    </section>
+ 
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>

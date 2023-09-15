@@ -1,0 +1,37 @@
+//Fonts//
+$font: 'Mulish', sans-serif;
+$font-title: 'Montserrat', sans-serif;
+
+//COLORS//
+$color-primary: #001A49;
+$color-grad-1: linear-gradient(44deg, #CD10FF 15.75%, #9F06FF 84.63%);
+$color-white: #FFFFFF;
+$color-grad-back: linear-gradient(44deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+$color-grad-circle: linear-gradient(36deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+$color-grey: #4F596A;
+$color-violet: #8639B5;
+$color-violet2: #9F07FF;
+$color-card: rgba(76, 0, 112, 0.20);
+$color-white-back: #E7EAEB;
+$color-grad-circle-back: linear-gradient(90deg, #FFD7A9 0%, #FFAE70 100%);
+
+
+//transition//
+
+$transition: .2s all ease-in-out;
+
+//radius//
+$radius-touch: 4px;
+$radius-btn: 33px;
+$radius-photo: 8px;
+$radius-icon: 10px;
+$radius-item: 21px;
+
+
+//breakpoints//
+
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+

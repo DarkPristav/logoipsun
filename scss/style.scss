@@ -1,0 +1,58 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+@import 'blocks/header';
+@import 'blocks/main-screen';
+@import 'blocks/counter';
+
+
+ .btn {
+     @include text ($font, 700, 16px, 20px, $color-white);
+     background: $color-grad-1;
+     display: inline-block;
+     padding: 15px 30px;
+     border-radius: $radius-btn;
+     border: 0;
+     cursor: pointer;
+     outline: 0;
+     transition: $transition;
+     
+     &:hover {
+        color: darken($color-violet, 10%);
+     }
+
+ }
+
+
+.title {
+    @include text ($font, 700, 44px, 52px, $color-primary);
+    span {
+            color: $color-primary;
+        }
+    margin-bottom: 17px;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.desc {
+    @include text ($font, 400, 16px, 25.6px, $color-grey);
+    margin-bottom: 40px;
+    max-width: 460px;
+    width: 100%;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+

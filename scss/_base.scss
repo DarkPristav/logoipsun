@@ -1,0 +1,50 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    &._overflow {
+        overflow: hidden;
+    }
+}
+
+body {
+    font-family: $font;
+    background: $color-white;
+    color: $color-grey;
+    padding-top: 115px;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    
+    max-width: 1180px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+hr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 1140px;
+    width: 100%;
+}
+
+h1, p{
+    margin: 0;
+    padding: 0;
+}

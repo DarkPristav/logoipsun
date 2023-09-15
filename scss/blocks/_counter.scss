@@ -1,0 +1,46 @@
+.counter {
+
+    &__item {
+        padding: 20px 125px;
+        text-align: center;
+        &:not(:last-child) {
+            border-right: 1px solid $color-white-back;
+        }
+        @include desktop-small {
+            &:not(:last-child) {
+                border-right: none;
+                border-bottom: 1px solid $color-white-back;
+            }
+        
+        }
+
+        @include mobile {
+            padding: 10px 0;
+        
+        }
+
+    }
+    
+    &__amount {
+        @include text ($font-title, 700, 40px, 50px, $color-primary);
+        margin-bottom: 2px;
+    }
+    
+    &__title {
+        @include text ($font, 400, 16px, 20px, $color-grey);
+    }
+
+    &__wrapper {
+        border-radius: $radius-item;
+        border: 1px solid $color-white-back;
+        background: $color-white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 30px 0;
+        @include desktop-small {
+            grid-template-columns: 1fr;
+        
+        }
+    }
+}
+
