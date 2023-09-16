@@ -526,41 +526,139 @@ h1, p {
       .main-screen__students__desc span {
         color: #9F07FF; }
 
-.counter__item {
-  padding: 20px 125px;
-  text-align: center; }
-  .counter__item:not(:last-child) {
-    border-right: 1px solid #E7EAEB; }
-  @media (max-width: 1200px) {
+.counter {
+  margin-bottom: 165px;
+  position: relative; }
+  .counter__item {
+    padding: 20px 125px;
+    text-align: center; }
     .counter__item:not(:last-child) {
-      border-right: none;
-      border-bottom: 1px solid #E7EAEB; } }
-  @media (max-width: 576px) {
-    .counter__item {
-      padding: 10px 0; } }
-.counter__amount {
+      border-right: 1px solid #E7EAEB; }
+    @media (max-width: 1200px) {
+      .counter__item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #E7EAEB; } }
+    @media (max-width: 576px) {
+      .counter__item {
+        padding: 10px 0; } }
+  .counter__amount {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #001A49;
+    margin-bottom: 2px; }
+  .counter__title {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F596A; }
+  .counter__wrapper {
+    position: relative;
+    z-index: 2;
+    border-radius: 21px;
+    border: 1px solid #E7EAEB;
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 0; }
+    @media (max-width: 1200px) {
+      .counter__wrapper {
+        grid-template-columns: 1fr; } }
+  .counter__circle {
+    position: absolute; }
+    @media (max-width: 1200px) {
+      .counter__circle {
+        display: none; } }
+    .counter__circle._big {
+      width: 288px;
+      height: 288px;
+      background: linear-gradient(44deg, #CD10FF 15.75%, #9F06FF 84.63%);
+      border-radius: 50%;
+      left: -46px;
+      top: 20px;
+      z-index: 0; }
+    .counter__circle._small {
+      width: 86px;
+      height: 86px;
+      background: linear-gradient(36deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+      border-radius: 50%;
+      z-index: 1;
+      left: 156px;
+      top: 226px; }
+
+.question__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 46px;
+  line-height: 56px;
   color: #001A49;
-  margin-bottom: 2px; }
-.counter__title {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #4F596A; }
-.counter__wrapper {
+  margin-bottom: 51px;
+  text-align: center; }
+
+.item {
+  margin-left: 129px;
+  max-width: 850px;
+  width: 100%;
   border-radius: 21px;
-  border: 1px solid #E7EAEB;
-  background: #FFFFFF;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 30px 0; }
+  border: 1px solid rgba(76, 0, 112, 0.2);
+  padding: 40px;
+  margin-bottom: 20px; }
   @media (max-width: 1200px) {
-    .counter__wrapper {
-      grid-template-columns: 1fr; } }
+    .item {
+      margin-left: 10px;
+      padding: 20px; } }
+  .item._active .item__header {
+    display: flex; }
+  .item._active .item__body {
+    display: block; }
+  .item._active .item__arrow > span {
+    transform: rotate(180deg); }
+  .item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 50px; }
+  .item__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #001A49; }
+  .item__arrow {
+    max-width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 0;
+    width: 100%; }
+    .item__arrow::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      background: linear-gradient(36deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+      border-radius: 50%; }
+    .item__arrow span {
+      transition: 0.2s all ease-in-out;
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      z-index: 2;
+      color: #8639B5; }
+  .item__body {
+    display: none;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4F596A;
+    margin-top: 18px;
+    transition: 0.2s all ease-in-out;
+    max-width: 667px;
+    width: 100%; }
 
 .btn {
   font-family: "Mulish", sans-serif;

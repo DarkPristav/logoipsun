@@ -1,6 +1,9 @@
 .counter {
+    margin-bottom: 165px;
+    position: relative;
 
     &__item {
+        
         padding: 20px 125px;
         text-align: center;
         &:not(:last-child) {
@@ -31,16 +34,45 @@
     }
 
     &__wrapper {
+        position: relative;
+        z-index: 2;
         border-radius: $radius-item;
         border: 1px solid $color-white-back;
         background: $color-white;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 30px 0;
+        
         @include desktop-small {
             grid-template-columns: 1fr;
-        
         }
     }
+    
+    &__circle {
+        position: absolute;
+        @include desktop-small {
+            display: none;        
+        }
+        &._big{
+            width: 288px;
+            height: 288px;
+            background: $color-grad-1;
+            border-radius: 50%;
+            left: -46px;
+            top: 20px;
+            z-index: 0;
+        }
+
+        &._small {
+            width: 86px;
+            height: 86px;
+            background: $color-grad-circle;
+            border-radius: 50%;
+            z-index: 1;
+            left: 156px;
+            top: 226px;
+        }
+    }
+
 }
 
